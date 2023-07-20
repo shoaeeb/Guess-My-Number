@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+  font-size: 1.2em;
+}
+body {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 700;
+}
+/* for header again and between 1 and 20 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+}
+
+/* for again text */
+.left-header {
+  background-color: white;
+  color: black !important;
+  width: 100px;
+  height: 45px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.left-header:hover,
+.bottom-left:hover {
+  filter: brightness(150%);
+  background-color: rgb(64, 63, 63);
+  cursor: pointer;
+}
+.right-header,
+.left-header {
+  font-size: 1.1em;
+}
+.middle-content {
+  text-align: center;
+  line-height: 150px;
+}
+
+hr {
+  background-color: white;
+  height: 15px;
+}
+
+.middle-box {
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+}
+.center-box {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 37px 0;
+  font-size: 2em;
+}
+
+.bottom-left-part {
+  width: 608px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+.form input {
+  height: 100px;
+  font-size: 1.1em;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.bottom-left {
+  margin-top: 25px;
+  background-color: white;
+  color: black;
+  padding: 16px 0;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+}
+
+.bottom-right-part {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.score-board {
+  margin-top: 10px;
+}
+.score-board p {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* for responsive || for small screen devices */
+@media only screen and (max-width: 800px) {
+  .bottom-part {
+    margin-top: 100px;
+  }
+  .bottom-left-part,
+  .bottom-right-part {
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .bottom-part {
+    display: flex;
+    flex-direction: column;
+  }
+}
