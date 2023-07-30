@@ -35,6 +35,7 @@ window.addEventListener("load", (event) => {
     $$.displayScore.innerHTML = 20;
     score = 20;
     document.body.style.backgroundColor = "black";
+    $.numberChecker.value = "";
   };
   0;
   //for first to load the guessed number
@@ -42,6 +43,12 @@ window.addEventListener("load", (event) => {
 
   //get the input from the user
   $.checkButton.addEventListener("click", (event) => {
+    if (score <= 0) {
+      alert(
+        "you already lost the game as the score is 0 just reload the page or click on play again to play again"
+      );
+      return;
+    }
     if (document.body.style.backgroundColor == "blue") {
       alert(
         "You already know the answer! Click on Play again or reload the page"
